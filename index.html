@@ -8,7 +8,7 @@ country: "us"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "37.0566221, -76.404466"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "Jan 26-27, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "TBD"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humantime: "9:00am - 5:00pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-01-26      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2017-01-27        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Kunal Marwaha", "Kathleen Moore"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -190,25 +190,23 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td> </td> <td>TBD</td> </tr>
-<!--       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
       <tr> <td>10:30</td> <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
       <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr> -->
+      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td> </td> <td>TBD</td> </tr>
-<!--       <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
+      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
+      <tr> <td>13:00</td>  <td>Capstone Project</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr> -->
+      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
 </div>
@@ -530,6 +528,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
+      <b>
+        At minimum, please install <a href="http://www.sublimetext.com/">Sublime Text</a>.
+      </b>
       <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
@@ -539,9 +540,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         <strong>This installer requires an active internet connection.</strong>
       </p>
       <p>
-        Others editors that you can use are
+        Other editors that you can use are
         <a href="http://notepad-plus-plus.org/">Notepad++</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
         <strong>Be aware that you must
           add its installation directory to your system path.</strong>
         Please ask your instructor to help you do this.
@@ -549,6 +549,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     </div>
     <div class="col-md-4">
       <h4 id="editor-macosx">Mac OS X</h4>
+      <b>
+        At minimum, please install <a href="http://www.sublimetext.com/">Sublime Text</a>.
+      </b>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
         See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
@@ -563,6 +566,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     </div>
     <div class="col-md-4">
       <h4 id="editor-linux">Linux</h4>
+      <b>
+        At minimum, please install <a href="http://www.sublimetext.com/">Sublime Text</a>.
+      </b>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
         It should be pre-installed.
@@ -594,8 +600,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
     <p>
       Regardless of how you choose to install it,
-      <strong>please make sure you install Python version 3.x</strong>
-      (e.g., 3.4 is fine).
+      <strong>please make sure you install Python version 2.x</strong>
+      (e.g., 2.7 is fine).
     </p>
 
     <p>
@@ -614,8 +620,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       <a href="https://www.youtube.com/watch?v=xxQ0mzZ8UvA">Video Tutorial</a>
       <ol>
         <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Windows.</li>
-        <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
+        <li>Download the Python 2 installer for Windows.</li>
+        <li>Install Python 2 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
       </ol>
     </div>
     <div class="col-md-4">
@@ -623,16 +629,16 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
       <ol>
         <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
-        <li>Download the Python 3 installer for OS X.</li>
-        <li>Install Python 3 using all of the defaults for installation.</li>
+        <li>Download the Python 2 installer for OS X.</li>
+        <li>Install Python 2 using all of the defaults for installation.</li>
       </ol>
     </div>
     <div class="col-md-4">
       <h4 id="python-linux">Linux</h4>
       <ol>
         <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Linux.</li>
-        <li>Install Python 3 using all of the defaults for installation.
+        <li>Download the Python 2 installer for Linux.</li>
+        <li>Install Python 2 using all of the defaults for installation.
         (Installation requires using the shell. If you aren't
         comfortable doing the installation yourself
         stop here and request help at the workshop.)</li>
@@ -640,7 +646,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
           Open a terminal window.
         </li>
         <li>
-          Type <pre>bash Anaconda3-</pre> and then press
+          Type <pre>bash Anaconda</pre> and then press
           tab. The name of the file you just downloaded should
           appear.
         </li>
